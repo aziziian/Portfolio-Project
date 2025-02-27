@@ -642,6 +642,57 @@ section {
   font-size: 6.3rem;
 }
 
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-about,
+  .left-about {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .timeline {
+    display: block;
+    padding-bottom: 6rem;
+  }
+  .certifications {
+    display: block;
+    padding-bottom: 6rem;
+  }
+  .portfolios {
+    display: block;
+    padding-bottom: 6rem;
+  }
+  .section {
+    padding: 2rem 2.5rem;
+  }
+  .main-title h2 {
+    font-size: 2rem;
+  }
+  .main-title h2 span {
+    font-size: 2.25rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 3rem;
+  }
+  .controls {
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey5);
+  }
+  .controls .control {
+    margin: 0.6rem 2rem;
+  }
+}
+/* Mobile (600px and below) */
 @media screen and (max-width: 600px) {
   .about-container {
     grid-template-columns: 1fr;
@@ -681,28 +732,7 @@ section {
     font-size: 3rem;
   }
 }
-@media screen and (max-width: 1432px) {
-  header {
-    padding: 0 !important;
-  }
-  .section {
-    padding: 7rem 11rem;
-  }
-  .contact-content-con {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact {
-    margin-left: 0;
-    margin-top: 2.5rem;
-  }
-  .contact-content-con .right-contact .i-c-2 {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact .i-c-2 :last-child {
-    margin-left: 0;
-    margin-top: 1.5rem;
-  }
-}
+/* Tablet and Smaller Desktop (up to 1070px) */
 @media screen and (max-width: 1070px) {
   .about-container {
     grid-template-columns: 1fr;
@@ -726,6 +756,7 @@ section {
     font-size: 4.5rem;
   }
 }
+/* Tablet and Medium Screens (up to 970px) */
 @media screen and (max-width: 970px) {
   .section {
     padding: 7rem 6rem;
@@ -769,6 +800,7 @@ section {
     margin: 0.6rem 2rem;
   }
 }
+/* Smaller Screens (700px and below) */
 @media screen and (max-width: 700px) {
   .section {
     padding: 7rem 3rem;
@@ -781,5 +813,28 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 4rem;
+  }
+}
+/* Large Desktop and Larger (up to 1432px) */
+@media screen and (max-width: 1432px) {
+  header {
+    padding: 0 !important;
+  }
+  .section {
+    padding: 7rem 11rem;
+  }
+  .contact-content-con {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

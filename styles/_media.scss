@@ -1,137 +1,181 @@
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-@media screen and (max-width: 600px){
-    .about-container{
+    .right-about,
+    .left-about {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .timeline {
+        display: block;
+        padding-bottom: 6rem;
+    }
+
+    .certifications {
+        display: block;
+        padding-bottom: 6rem;
+    }
+
+    .portfolios {
+        display: block;
+        padding-bottom: 6rem;
+    }
+
+    .section {
+        padding: 2rem 2.5rem;
+    }
+
+    .main-title {
+        h2 {
+            font-size: 2rem;
+            span {
+                font-size: 2.25rem;
+            }
+            .bg-text {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .controls {
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey5);
+        .control {
+            margin: .6rem 2rem;
+        }
+    }
+}
+
+/* Mobile (600px and below) */
+@media screen and (max-width: 600px) {
+    .about-container {
         grid-template-columns: 1fr;
-        .right-about{
+        .right-about {
             grid-template-columns: 1fr;
             padding-top: 2.5rem;
         }
-        .left-about{
+        .left-about {
             padding-right: 0;
-            p{
+            p {
                 padding-left: 0;
             }
         }
     }
 
-    .timeline{
+    .timeline {
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
     }
 
-    .certifications{
-        grid-template-columns: 1fr;
-        padding-bottom: 6rem;
-    }
-    
-    .portfolios{
+    .certifications {
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
     }
 
-    .section{
+    .portfolios {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .section {
         padding: 2rem 2.5rem;
     }
 
-    .main-title{
-        h2{
+    .main-title {
+        h2 {
             font-size: 2rem;
-            span{
+            span {
                 font-size: 2.25rem;
             }
-            .bg-text{
+            .bg-text {
                 font-size: 3rem;
             }
         }
     }
 }
 
-@media screen and (max-width: 1432px){
-    header{
-        padding: 0 !important;
-    }
-    .section{
-        padding: 7rem 11rem;
-    }
-    .contact-content-con{
-        flex-direction: column;
-        .right-contact{
-            margin-left: 0;
-            margin-top: 2.5rem;
-        }
-    }
-    .contact-content-con .right-contact .i-c-2{
-        flex-direction: column;
-    }
-    .contact-content-con .right-contact .i-c-2 :last-child{
-        margin-left: 0;
-        margin-top: 1.5rem;
-    }
-}
-
+/* Tablet and Smaller Desktop (up to 1070px) */
 @media screen and (max-width: 1070px) {
-    .about-container{
+    .about-container {
         grid-template-columns: 1fr;
-        .right-about{
+        .right-about {
             padding-top: 2.5rem;
         }
     }
-    .portfolios{
-        grid-template-columns: 1fr 1fr;
-    }
-    .certifications{
+
+    .portfolios {
         grid-template-columns: 1fr 1fr;
     }
 
-    
-    .main-title{
-        h2{
+    .certifications {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-title {
+        h2 {
             font-size: 4rem;
-            span{
+            span {
                 font-size: 4rem;
             }
-            .bg-text{
+            .bg-text {
                 font-size: 4.5rem;
             }
         }
     }
 }
 
-@media screen and (max-width: 970px){
-    .section{
+/* Tablet and Medium Screens (up to 970px) */
+@media screen and (max-width: 970px) {
+    .section {
         padding: 7rem 6rem;
     }
-    header{
+
+    header {
         padding: 0;
     }
-    header .right-header{
+
+    header .right-header {
         padding: 0 !important;
     }
 
-    .header-content{
+    .header-content {
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
     }
-    .left-header{
-        .h-shape{
+
+    .left-header {
+        .h-shape {
             display: none;
         }
     }
 
-    .right-header{
+    .right-header {
         grid-row: 1;
         width: 90%;
         margin: 0 auto;
-        .name{
+        .name {
             font-size: 2.5rem !important;
         }
     }
 
-    .header-content .left-header .image{
+    .header-content .left-header .image {
         margin: 0 auto;
         width: 90%;
     }
-    .controls{
+
+    .controls {
         top: auto;
         bottom: 0;
         flex-direction: row;
@@ -140,25 +184,55 @@
         transform: translateX(-50%);
         width: 100%;
         background-color: var(--color-grey5);
-        .control{
+        .control {
             margin: .6rem 2rem;
         }
     }
 }
 
-@media screen and (max-width: 700px){
-    .section{
+/* Smaller Screens (700px and below) */
+@media screen and (max-width: 700px) {
+    .section {
         padding: 7rem 3rem;
     }
-    .main-title{
-        h2{
+
+    .main-title {
+        h2 {
             font-size: 3rem;
-            span{
+            span {
                 font-size: 3rem;
             }
-            .bg-text{
+            .bg-text {
                 font-size: 4rem;
             }
         }
+    }
+}
+
+/* Large Desktop and Larger (up to 1432px) */
+@media screen and (max-width: 1432px) {
+    header {
+        padding: 0 !important;
+    }
+
+    .section {
+        padding: 7rem 11rem;
+    }
+
+    .contact-content-con {
+        flex-direction: column;
+        .right-contact {
+            margin-left: 0;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .contact-content-con .right-contact .i-c-2 {
+        flex-direction: column;
+    }
+
+    .contact-content-con .right-contact .i-c-2 :last-child {
+        margin-left: 0;
+        margin-top: 1.5rem;
     }
 }
